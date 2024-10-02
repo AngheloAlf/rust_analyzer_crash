@@ -1,22 +1,28 @@
 
 #[cfg(test)]
 pub(crate) mod tests {
-    use std::string::ToString;
-
     pub(crate) const OPERAND_COUNT_MAX: usize = 5;
 
     use crate::{Instruction, InstructionFlags, DisplayFlags, Opcode};
 
     pub(crate) struct TestEntry {
+        #[allow(dead_code)]
         pub instr: Instruction,
+        #[allow(dead_code)]
         pub imm_override: Option<&'static str>,
+        #[allow(dead_code)]
         pub display_flags: DisplayFlags,
 
+        #[allow(dead_code)]
         pub valid: bool,
 
+        #[allow(dead_code)]
         pub expected: &'static str,
+        #[allow(dead_code)]
         pub expected_opcode: Opcode,
+        #[allow(dead_code)]
         pub opcode_str: &'static str,
+        #[allow(dead_code)]
         pub operands_str: [Option<&'static str>; OPERAND_COUNT_MAX],
     }
 

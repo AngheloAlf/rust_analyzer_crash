@@ -1,6 +1,6 @@
 #[cfg(test)]
 pub(crate) mod tests {
-    use crate::tests::instruction_tests::tests::{check_test_entries, TestEntry};
+    use crate::test_impl::tests::{check_test_entries, TestEntry};
     use crate::{DisplayFlags, Instruction, InstructionFlags, Opcode};
 
     #[test]
